@@ -1,0 +1,5 @@
+{
+  "selected_variant": "l2",
+  "criterion": "lowest mean validation cross-entropy across seeds",
+  "test_used_for_selection": false
+}

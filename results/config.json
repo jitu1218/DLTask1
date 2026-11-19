@@ -1,0 +1,50 @@
+{
+  "dataset": "sklearn bundled digits",
+  "split_seed": 42,
+  "split_sizes": {
+    "train": 1077,
+    "val": 360,
+    "test": 360
+  },
+  "epochs": 120,
+  "seeds": [
+    11,
+    22,
+    33
+  ],
+  "variants": {
+    "baseline": {
+      "dropout": 0.0,
+      "l2": 0.0,
+      "early": false
+    },
+    "dropout": {
+      "dropout": 0.3,
+      "l2": 0.0,
+      "early": false
+    },
+    "l2": {
+      "dropout": 0.0,
+      "l2": 0.001,
+      "early": false
+    },
+    "early_stopping": {
+      "dropout": 0.0,
+      "l2": 0.0,
+      "early": true
+    },
+    "combined": {
+      "dropout": 0.3,
+      "l2": 0.001,
+      "early": true
+    }
+  },
+  "learning_rate": 0.001,
+  "batch_size": 64,
+  "patience": 15,
+  "min_delta": 0.0001,
+  "python": "3.11.9",
+  "torch": "2.15.0+cpu",
+  "numpy": "2.3.5",
+  "sklearn": "1.8.0"
+}
